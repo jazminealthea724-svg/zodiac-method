@@ -1,0 +1,53 @@
+
+import java.util.Scanner;
+
+public class Main {
+    static Scanner scanner = new Scanner(System.in);
+
+    static int month, day;
+    static String answer;
+
+    static void birthDate() {
+        System.out.print("Enter Month of Birth: ");
+        month = scanner.nextInt();
+
+        System.out.print("Enter Day of Birth: ");
+        day = scanner.nextInt();
+        scanner.nextLine();
+    }
+
+    static void zodiacSign() {
+        if (month == 12 && day >= 22 || month == 1 && day <= 19) {
+            System.out.println("Zodiac: Capricorn");
+        } else if (month == 1 && day >= 20 || month == 2 && day <= 18) {
+            System.out.println("Zodiac: Aquarius");
+        } else if (month == 2 && day >= 19 || month == 3 && day <= 20) {
+            System.out.println("Zodiac: Pisces");
+        } else if (month == 3 && day >= 21 || month == 4 && day <= 19) {
+            System.out.println("Zodiac: Aries");
+        } else if (month == 4 && day >= 20 || month == 5 && day <= 20) {
+            System.out.println("Zodiac: Taurus");
+        } else if (month == 5 && day >= 21 || month == 6 && day <= 20) {
+            System.out.println("Zodiac: Gemini");
+        } else if (month == 6 && day >= 21 || month == 7 && day <= 22) {
+            System.out.println("Zodiac: Cancer");
+        } else if (month == 7 && day >= 23 || month == 8 && day <= 22) {
+            System.out.println("Zodiac: Leo");
+        } else if (month == 8 && day >= 23 || month == 9 && day <= 22) {
+            System.out.println("Zodiac: Virgo");
+        } else if (month == 9 && day >= 23 || month == 10 && day <= 22) {
+            System.out.println("Zodiac: Libra");
+        } else if (month == 10 && day >= 23 || month == 11 && day <= 21) {
+            System.out.println("Zodiac: Scorpio");
+        } else if (month == 11 && day >= 22 || month == 12 && day <= 21) {
+            System.out.println("Zodiac: Sagittarius");
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+    public static void main(String[] args) {
+        birthDate();
+            zodiacSign();
+        }
+    }
+
